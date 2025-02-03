@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anwar Fuad</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+
+      <div class="media">
+        <h3>media</h3>
+      </div>
+
+      <div class="media-grid">
+        <div class="social-media-center">
+          <a href="https://anwarfuad61.github.io/anwarfuadcv.github.io/">
+            <div class="social-media">
+              <div class="social-image">
+                <img src="./assets/website.jpg" alt="anwar fuad website" />
+              </div>
+              <p>anwarfuad61.github.io</p>
+              <h3>portfolio</h3>
+              <div class="click-here"><p>click here</p></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="social-media-center">
+          <a href="https://www.linkedin.com/in/anwarfuad231/">
+            <div class="social-media">
+              <div class="social-image">
+                <img src="./assets/linkedin.jpg" alt="anwar fuad linkedin" />
+              </div>
+              <p>@anwarfuad</p>
+              <h3>linkedin</h3>
+              <div class="click-here"><p>click here</p></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="social-media-center">
+          <a href="https://www.instagram.com/anwar_fuad123/">
+            <div class="social-media">
+              <div class="social-image">
+                <img src="./assets/ig.jpg" alt="anwar fuad ig" />
+              </div>
+              <p>@anwar_fuad123</p>
+              <h3>instagram</h3>
+              <div class="click-here"><p>click here</p></div>
+            </div>
+          </a>
+        </div>
+
+        <div class="social-media-center">
+          <a href="https://github.com/Anwarfuad61">
+            <div class="social-media">
+              <div class="social-image">
+                <img src="./assets/github.jpg" alt="anwar fuad github" />
+              </div>
+              <p>@anwarfuad61</p>
+              <h3>github</h3>
+              <div class="click-here"><p>click here</p></div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="rotation">
+        <div class="happy-man">
+          <div class="line-animation">
+            <img
+              class="happy-man-icon"
+              src="./assets/happy-man-icon.svg"
+              alt="happy man icon"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="media">
+        <h3>contant me</h3>
+      </div>
+
+      <div class="contact-father">
+        <div class="contact">
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=anwarfuad0987@gmail.com"
+            target="_blank"
+          >
+            <div>
+              <img src="./assets/gmail.svg" alt="anwar fuad gmail" />
+            </div>
+          </a>
+          <a href="https://t.me/anwarfuad_231">
+            <div>
+              <img src="./assets/telegram.svg" alt="anwar fuad telegram" />
+            </div>
+          </a>
+          <a href="https://www.tiktok.com/@cry.secret">
+            <div>
+              <img src="./assets/tiktok.svg" alt="anwar fuad tiktok" />
+            </div>
+          </a>
+          <a href="https://wa.me/+6289524173746">
+            <div>
+              <img src="./assets/whatsapp.svg" alt="anwar fuad whatsapp" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="playlist">
+        <h3>Song Playlist</h3>
+        <ul>
+          <li onclick="playSong('Beanie (Slowed).mp3')">
+            <span class="song-title">Beanie</span>
+            <span class="song-duration">02:53</span>
+          </li>
+          <li onclick="playSong('Billie Eilish – WILDFLOWER.mp3')">
+            <span class="song-title">Billie Eilish – WILDFLOWER</span>
+            <span class="song-duration">03:45</span>
+          </li>
+          <li onclick="playSong('Lady Gaga Bruno Mars - Die With A Smile (Official Music Video).mp3')">
+            <span class="song-title">Lady Gaga Bruno Mars - Die With A Smile</span>
+            <span class="song-duration">04:12</span>
+          </li>
+        </ul>
+        <audio id="audioPlayer" controls></audio>
+      </div>
+      
+      <script>
+        function playSong(song) {
+          var audio = document.getElementById("audioPlayer");
+          audio.src = "./assets/music/" + song; // Sesuaikan path sesuai lokasi file audio
+          audio.play();
+        }
+      </script>
+      
+      <style>
+        /* Gaya dasar */
+        body {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          background-color: #f4f4f9;
+          color: #333;
+        }
+      
+        .playlist {
+  text-align: center;
+  margin: 20px auto;
+  max-width: 400px;
+  background: rgba(255, 255, 255, 0.3); /* Semi-transparent white background */
+  padding: 20px;
+  border-radius: 20px; /* More rounded corners for a modern bubble effect */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Apply a blur effect to the background for a sleek look */
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Subtle border for separation */
+}
+      
+        h3 {
+          font-size: 24px;
+          margin-bottom: 20px;
+          color: #2c3e50;
+        }
+      
+        ul {
+          list-style: none;
+          padding: 0;
+        }
+      
+        li {
+          cursor: pointer;
+          padding: 12px;
+          background: #f8f9fa;
+          margin: 8px 0;
+          border-radius: 8px;
+          transition: all 0.3s ease;
+          font-size: 16px;
+          color: #555;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+      
+        li:hover {
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradasi warna biru dan ungu */
+  color: #fff;
+  transform: translateY(-5px); /* Sedikit lebih tinggi untuk efek hover */
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Lebih kuat shadow untuk efek floating */
+  transition: all 0.3s ease; /* Haluskan transisi efek */
+}
+      
+        .song-title {
+          font-weight: bold;
+        }
+      
+        .song-duration {
+          font-size: 14px;
+          color: #8b7676;
+        }
+      
+        audio {
+          width: 100%;
+          margin-top: 20px;
+          border-radius: 8px;
+          outline: none;
+        }
+      
+        /* Efek hover untuk audio player */
+        audio::-webkit-media-controls-panel {
+          background-color: #f8f9fa;
+          border-radius: 8px;
+          transition: background-color 0.3s ease;
+        }
+      
+        audio:hover::-webkit-media-controls-panel {
+          background-color: #e9ecef;
+        }
+      </style>
+    </div>
+  </body>
+</html>
