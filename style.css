@@ -450,6 +450,7 @@ top: 6em;
     margin-bottom: 0.4em;
 }
 .social-image img {
+    height: 100%;
     width: 100px;
 }
 .social-media>p {
